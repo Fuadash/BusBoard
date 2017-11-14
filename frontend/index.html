@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Departure boards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="departures.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<h1 id="title">BusBoard Gone Draggable!</h1>
+<div id="submitContainer">
+    <form id="postcodeSubmit";>
+        <input type="text" name="postcode" id="postcode" placeholder="Enter your postcode">
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+<div id="space"></div>
+
+<div id="resultsContainer">
+    <div id="results">
+
+    </div>
+</div>
+<div id="background">
+    <img class="bus" src="http://media.gizmodo.co.uk/wp-content/uploads/2014/07/bus-620x349.jpg">
+    <img class="bus" src="https://ietp-web-cdn-eandt-legacy.azureedge.net/news/2012/jun/images/640_alexander_dennis_creditadl.jpg">
+    <img class="bus" src="https://i2-prod.somersetlive.co.uk/incoming/article75223.ece/ALTERNATES/s615/First-Bus-YeovilJPG.jpg">
+    <img class="bus" src="https://greenerjourneys.com/wp-content/uploads/2016/02/14222146585_e72b5f68bd_k-1024x768.jpg">
+    <img class="bus" src="https://volvobusesenvironmentblog.files.wordpress.com/2015/04/volvo-b5lh-hybrid-bus-in-uk.jpg">
+    <img class="bus" src="http://www.platinuminternational.com/wp-content/uploads/touristic_bus_holiday_042397.jpg">
+    <img class="bus" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/London%27s_new_bus_-_geograph.org.uk_-_2824590.jpg">
+    <img class="bus" src="http://media.gizmodo.co.uk/wp-content/uploads/2015/06/london-bus-620x349.jpg">
+    <img class="bus" src="http://www.transportengineer.org.uk/article-images/119101/Volvo-hybrid_popup.jpg">
+    <img class="bus" src="http://www.modelbuszone.co.uk/cmnl/sd/8000/img/ukbus0034_0.jpg">
+    <img class="bus" src="http://cdn.images.express.co.uk/img/dynamic/1/590x/bus-crash-sutton-625148.jpg">
+    <img class="bus" src="https://static1.squarespace.com/static/5318a7c0e4b03ba2018b69f4/t/5991bbe8b8a79bdcdd07eb07/1502723063981/">
+    <img class="bus" src="https://www.intelligenttransport.com/wp-content/uploads/Strong-growth-continues-in-UK-bus-and-coach-market.jpg">
+    <img class="bus" src="https://cdn.arstechnica.net/wp-content/uploads/sites/3/2015/07/Metroline_buses_LT16_LK13_FJN__LT26_LTZ_1026_19_September_2013-640x381.jpg">
+    <img class="bus" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/05/08/17/islamic_relief_bus2.jpg">
+    <img class="bus" src="https://www.desmog.uk/sites/beta.desmogblog.com/files/styles/full_width_blog_image/public/blogimages/London_Bus_route_328_hybrid_bus_A.jpg?itok=rLahRIW0">
+    <img class="bus" src="https://irp-cdn.multiscreensite.com/806bbcea/dms3rep/multi/desktop/11-418x252.jpg">
+</div>
+</body>
+<script>
+    $.ready(setSubmit())
+    $( "#background" ).sortable();
+</script>
+</html>

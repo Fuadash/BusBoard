@@ -1,0 +1,77 @@
+*{
+    font-family: Arial;
+}
+
+body {
+    background-color: #DDDDDD;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#title{
+    width:230px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 3em;
+}
+
+#postcode{
+}
+
+#space{
+    height:20px;
+    z-index: -1000;
+    pointer-events: none;
+}
+
+#submitContainer{
+    border-radius:3px;
+    border-bottom: 2px solid #BBBBBB;
+    padding-bottom: 20px;
+    width: 235px;
+    margin: 0 auto;
+}
+
+#submit{
+    background-color: grey;
+}
+
+#results{
+    border: solid 2px #CCCCCC;
+    text-align: center;
+    background: linear-gradient(to top, #D9D9D9 0%, #DDDDDD 100%);
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function:ease-in-out;
+    display: none;
+}
+#postcodeSubmit {
+    display: inline;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@keyframes slide {
+    0% {margin-right: 100%; width:160%;opacity: 0;height:0px;}
+    50%{margin-right: 100%; width:160%;opacity: 0;height:auto;}
+    100% {margin-right: 50%; width:100%; opacity: 1;height:auto;}
+}
+
+#background{
+    width: auto;
+    margin: 0 auto;
+    z-index: -5;
+
+}
+#background > img{
+    max-width: 275px;
+    max-height:275px;
+    transition: max-width 2s,max-height 2s;
+}
+
+#background > img:hover {
+    max-width: 430px;
+    max-height: 430px;
+}
